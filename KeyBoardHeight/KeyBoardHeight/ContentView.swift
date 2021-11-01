@@ -5,17 +5,28 @@
 //  Created by Benjamin Lewis on 31/10/21.
 //
 
+import Combine
 import SwiftUI
 
 struct ContentView: View {
-  var body: some View {
-    Text("Hello, world!")
-      .padding()
-  }
-}
+  @State private var keyboardHeight: CGFloat = 0
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
+  var body: some View {
+    VStack(spacing: 0) {
+      ScrollView {
+        FormView()
+          .padding(.bottom, keyboardHeight)
+      }
+      .ignoresSafeArea([], edges: [])
+      .background(Color.secondary)
+      .clipped()
+      TabBarView()
+//        .onReceive(Publishers.keyboardHeight) { keyboardHeight = $0 }
+//        .frame(height: keyboardHeight > 0 ? .zero : nil)
+//        .opacity(keyboardHeight > 0 ? .zero : 100)
+        .ignoresSafeArea(.keyboard)
+    }
+    .ignoresSafeArea(.keyboard)
+    .onReceive(Publishers.keyboardHeight) { keyboardHeight = $0 }
   }
 }

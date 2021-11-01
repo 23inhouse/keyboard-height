@@ -14,6 +14,10 @@
 		B579DFE6272E916600422F00 /* KeyBoardHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579DFE5272E916600422F00 /* KeyBoardHeightTests.swift */; };
 		B579DFF0272E916600422F00 /* KeyBoardHeightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579DFEF272E916600422F00 /* KeyBoardHeightUITests.swift */; };
 		B579DFF2272E916600422F00 /* KeyBoardHeightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579DFF1272E916600422F00 /* KeyBoardHeightUITestsLaunchTests.swift */; };
+		B5F3F75C272FE0B5003579A1 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3F75B272FE0B5003579A1 /* FormView.swift */; };
+		B5F3F75E272FE153003579A1 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3F75D272FE153003579A1 /* TabBarView.swift */; };
+		B5F3F761272FE534003579A1 /* Publishers+KeyboardHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3F760272FE534003579A1 /* Publishers+KeyboardHeight.swift */; };
+		B5F3F763272FE542003579A1 /* Notification+KeyboardHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3F762272FE542003579A1 /* Notification+KeyboardHeight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		B579DFEB272E916600422F00 /* KeyBoardHeightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyBoardHeightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B579DFEF272E916600422F00 /* KeyBoardHeightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardHeightUITests.swift; sourceTree = "<group>"; };
 		B579DFF1272E916600422F00 /* KeyBoardHeightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardHeightUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5F3F75B272FE0B5003579A1 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		B5F3F75D272FE153003579A1 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		B5F3F760272FE534003579A1 /* Publishers+KeyboardHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publishers+KeyboardHeight.swift"; sourceTree = "<group>"; };
+		B5F3F762272FE542003579A1 /* Notification+KeyboardHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+KeyboardHeight.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,10 @@
 			children = (
 				B579DFD4272E916300422F00 /* KeyBoardHeightApp.swift */,
 				B579DFD6272E916300422F00 /* ContentView.swift */,
+				B5F3F75B272FE0B5003579A1 /* FormView.swift */,
+				B5F3F75D272FE153003579A1 /* TabBarView.swift */,
 				B579DFD8272E916600422F00 /* Assets.xcassets */,
+				B5F3F75F272FE504003579A1 /* Extensions */,
 				B579DFDA272E916600422F00 /* Preview Content */,
 			);
 			path = KeyBoardHeight;
@@ -125,6 +136,15 @@
 				B579DFF1272E916600422F00 /* KeyBoardHeightUITestsLaunchTests.swift */,
 			);
 			path = KeyBoardHeightUITests;
+			sourceTree = "<group>";
+		};
+		B5F3F75F272FE504003579A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3F762272FE542003579A1 /* Notification+KeyboardHeight.swift */,
+				B5F3F760272FE534003579A1 /* Publishers+KeyboardHeight.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F3F75C272FE0B5003579A1 /* FormView.swift in Sources */,
 				B579DFD7272E916300422F00 /* ContentView.swift in Sources */,
+				B5F3F761272FE534003579A1 /* Publishers+KeyboardHeight.swift in Sources */,
+				B5F3F75E272FE153003579A1 /* TabBarView.swift in Sources */,
+				B5F3F763272FE542003579A1 /* Notification+KeyboardHeight.swift in Sources */,
 				B579DFD5272E916300422F00 /* KeyBoardHeightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
